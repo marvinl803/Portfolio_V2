@@ -243,7 +243,7 @@ body {
 }
 
 /* Responsive code for the hero section*/
-@media (max-width: 768px) {
+@media (max-width: 390px) {
     .container {
         max-width: 100%;
     }
@@ -288,7 +288,7 @@ body {
   }
 
 /* Code for the navbar responsiveness*/
-@media (max-width: 768px) {
+@media (max-width: 390px) {
     .navbar {
         width: 100%;
     }
@@ -352,7 +352,7 @@ body {
 }
 
 /* Responsive code for the who section*/
-@media (max-width: 768px) {
+@media (max-width: 390px) {
     .container {
         max-width: 100%;
     }
@@ -561,7 +561,7 @@ body {
   }
 
 /* Works code for responsiveness*/
-@media (max-width: 768px) {
+@media (max-width: 390px) {
     .container {
         max-width: 100%;
     }
@@ -664,10 +664,8 @@ body {
 
 }
 /* Contact page responsive code*/
-@media (max-width: 768px) {
-    .container {
-        max-width: 100%;
-    }
+@media (max-width: 390px) {
+    
     .contact__container{
         width: 100%;
     }
