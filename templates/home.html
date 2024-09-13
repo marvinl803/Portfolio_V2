@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<header class="header">
+    <nav class="navbar">
+        <div id="links" class="navbar__links">
+            <a href="#hero" class="navbar__link">
+                <img src="{{ url_for('static', filename='img/logo3.png') }}" alt="logo" class="navbar__logo" href="#hero">
+            </a>
+            <ul class="list">
+                <li class="list__item"><a class="header__link" href="#hero">Home</a></li>
+                <li class="list__item"><a class="header__link" href="#who">About</a></li>
+                <li class="list__item"><a class="header__link" href="#works">Works</a></li>
+                <li class="list__item"><a class="header__link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="icons">
+            <a href="#contact">
+                <button class="navbar__button">Contact Now</button>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <div id="hero" class="hero__container">
+        <div class="hero__left">
+            <h1 class="hero__title">Marvin Lopez</h1>
+            <div class="hero__whatwedo">
+                <img src="{{ url_for('static', filename='img/line.png') }}" alt="line" class="whatedo_image">
+                <h2 class="whatwedo__subtitle">What I do</h2>
+            </div>
+            <p class="hero__description">I enjoy creating delightful and innovative solutions.</p>
+
+            <div class="hero__socials">
+                <a href="https://github.com/marvinl803" target="_blank">
+                    <img src="{{ url_for('static', filename='img/github.png') }}" alt="Github Logo" class="social__image">
+                </a>
+    
+                <a href="https://www.linkedin.com/in/marvin-lopez3/" target="_blank">
+                    <img src="{{ url_for('static', filename='img/linkedin.png') }}" alt="Linked in logo" class="social__image">
+                </a>
+            </div>
+        </div>
+
+        <div class="hero__right">
+            <img src="{{ url_for('static', filename='img/astronaut.png') }}" alt="spaceman" class="hero__spaceman">
+        </div>
+    </div>
+
+    <div id="who" class="who__container">
+        <div class="who__left" id="who__left">
+            <!-- Three.js content will be added here -->
+        </div>
+
+        <div class="who__right">
+
+            <div class="who__weare">
+                <img src="{{ url_for('static', filename='img/line.png') }}" alt="line" class="who_image">
+                <h2 class="whoiam__subtitle">Who I am</h2>
+            </div>
+            <div class="who__description">
+                <p class="who__paragraph">Since I was a kid, I’ve been passionate about technology and fascinated by all the things you can create with it. 
+                I started by learning HTML to build my own websites, and that sparked a deeper interest, leading me to major in Computer Science at Queens College.</p>
+            
+                <p class="who__paragraph">Today, I’m still deeply involved in creating new technologies, but now I’m tackling more complex problems. I contribute to open source communities 
+                and work as a freelance web developer. I’m excited to bring my skills to a company where I can make a meaningful impact, keep learning, and continue growing.</p>
+            
+                <p class="who__paragraph">When I’m not at the computer, I love spending time outdoors. Whether I’m fishing, taking walks, catching a Mets game at the ballpark, or watching soccer with my family, 
+                I’m always finding new ways to enjoy life.</p>
+                </div>
+        </div>
+    </div>
+
+    <div id="works" class="works__container">
+        <h1 class="works__list__item" data-skill="Projects">Projects</h1>
+        <div class="works__subContainer">
+            <div class="works__left">
+                <button class="project__tablink" onclick="openProject(event, 'Portfolio')" id="defaultOpen">Portfolio</button>
+                <button class="project__tablink" onclick="openProject(event, 'Open_Source')">Open Source</button>
+                <button class="project__tablink" onclick="openProject(event, 'Soccer')">Team tracker</button>
+            </div>
+                
+            <div class="works__right">
+
+            <div id="Portfolio" class="tabContent">
+                <p class="works__p">
+                    For my personal portfolio project, I am developing a dynamic website designed to give 
+                    visitors an in-depth look into who I am and what I do. The site will feature a comprehensive 
+                    showcase of my projects, detailing the skills and experience behind each creation. In addition
+                    to offering insights into my professional journey, the website will include a dedicated space
+                    for users to easily get in touch with me.
+                </p>
+
+                <ul class="tech__used">
+                    <li><div class="tech__li">JavaScript</div></li>
+                    <li><div class="tech__li">ThreeJs</div></li>
+                    <li><div class="tech__li">HTML</div></li>
+                    <li><div class="tech__li">CSS</div></li>
+                    
+                </ul>
+             </div>
+             
+             <div id="Open_Source" class="tabContent">
+                <p class="works__p">
+                    I actively contribute to various open-source projects that I have used and benefited from in my 
+                    own work. These include an API designed for retrieving a wide range of soccer statistics, empowering
+                    developers to integrate sports data into their applications. Additionally, I’ve contributed to financial
+                    management tools, which help businesses and individuals efficiently track their expenses and budgets.
+                    </p>
+             </div>
+
+             <div id="Soccer" class="tabContent">
+                <p class="works__p">
+                    This project provides real-time updates on the latest matches and displays detailed information about
+                    all the competitions Real Madrid has participated in during the season. Users can explore match details,
+                    including scores, statistics, and other information related to the match. Additionally, the app features a
+                    chat box where fans can engage in discussions about the matches and team news. The project is still being
+                    further developed, and it aims to incorporate more features such as providing the latest news updates and
+                    fostering a community where fans can come together to discuss and stay informed about everything related
+                    to the club.
+                </p>
+
+                <ul class="tech__used">
+                    <li><div class="tech__li">Python</div></li>
+                    <li><div class="tech__li">HTML</div></li>
+                    <li><div class="tech__li">CSS</div></li>  
+                </ul>
+             </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="contact__container">
+        <div class="contact__left">
+            <form class="contact__form" id="contact-form">
+                <h1 class="contact__form__title">Contact Me</h1>
+                <input class="contact__input" type="text" name="name" placeholder="Name"/>
+                <input class="contact__input" type="email" name="email" placeholder="Email"/>
+                <textarea class="contact__text" name="message" rows="10" placeholder="Write your message"></textarea>
+                <button class="contact__button" type="submit">Send</button>
+            </form>
+        </div>
+        <div class="contact__right">
+            <img src="{{ url_for('static', filename='img/map.png') }}" class="contact__image" alt="U.S Map">
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvin Lopez | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+
+</head>
+
+<body>
+{% block content %}
+{% endblock %}
+
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init("{{ api_key }}");
+    })();
+
+</script>
+
+<script type="text/javascript">
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        emailjs.sendForm('{{ service_id}}', '{{ template_id }}', this)
+            .then(function () {
+                alert('Message sent successfully! I will get back to you soon! :)');
+            }, function (error) {
+                alert('Failed to send the message. Error: ' + JSON.stringify(error));
+            });
+    });
+</script>
+
+<script type="module" src="{{ url_for('static', filename='js/cube.js') }}"></script>
+<script type="module" src="{{ url_for('static', filename='js/sphere.js') }}"></script>
+<script src="{{ url_for('static', filename='js/tab_functions.js') }}"></script>
+
+</body>
+</html>
