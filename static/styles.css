@@ -992,10 +992,8 @@ body {
 /* Mobile S*/
 @media (max-width: 320px) {
     .contact__container{
-        width: 100%;
-        height: -webkit-fill-available;
+        width: 100svh;
     }
-
     .contact__right {
         display: none;
     }
@@ -1014,8 +1012,7 @@ body {
 /* Mobile M*/
 @media (max-width: 375px) {
     .contact__container{
-        width: 100%;
-        height: -webkit-fill-available;
+        width: 100svh;
     }
 
     .contact__right {
@@ -1036,8 +1033,7 @@ body {
 /* Mobile L */
 @media (max-width: 425px) {   
     .contact__container{
-        width: 100%;
-        height: -webkit-fill-available;
+        width: 100svh;
     }
 
     .contact__right {
