@@ -998,7 +998,6 @@ body {
     
     .contact__container{
         width: 100%;
-        height: calc(var(--vh, 1vh) * 100);
     }
 
     .contact__right {
@@ -1021,7 +1020,6 @@ body {
     
     .contact__container{
         width: 100%;
-        height: calc(var(--vh, 1vh) * 100);
     }
 
     .contact__right {
@@ -1044,7 +1042,6 @@ body {
     
     .contact__container{
         width: 100%;
-        height: calc(var(--vh, 1vh) * 100);
     }
 
     .contact__right {
