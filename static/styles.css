@@ -823,6 +823,7 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        margin-bottom: .25rem;
     }
 
     .project__tablink {
@@ -1009,6 +1010,7 @@ body {
     .contact__container{
         width: 100%;
         height: 100svh;
+        padding: .5rem;
     }
 
     .contact__right {
@@ -1016,12 +1018,12 @@ body {
     }
 
     .contact__left {
+        width: 100%;
         justify-content: center;
-        padding: .5rem;
     }
 
     .contact__form {
-        width: 250px;
+        max-width: 100%;
         justify-content: center;
     }
 }
@@ -1035,6 +1037,7 @@ body {
     .contact__container{
         width: 100%;
         height: 100svh;
+        padding: .5rem;
     }
 
     .contact__right {
@@ -1042,12 +1045,12 @@ body {
     }
 
     .contact__left {
+        width: 100%;
         justify-content: center;
-        padding: .5rem;
     }
 
     .contact__form {
-        width: 320px;
+        width: 100%;
         justify-content: center;
     }
 }
@@ -1061,6 +1064,7 @@ body {
     .contact__container{
         width: 100%;
         height: 100svh;
+        padding: .5rem;
     }
 
     .contact__right {
@@ -1069,11 +1073,11 @@ body {
 
     .contact__left {
         justify-content: center;
-        padding: .5rem;
+        width: 100%;
     }
 
     .contact__form {
-        width: 360px;
+        width: 100%;
         justify-content: center;
     }
 }
