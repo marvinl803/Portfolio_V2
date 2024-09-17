@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+@viewport {
+    viewport-fit: cover;
+}
+
 html {
     font-family: Lato, sans-serif;
     scroll-behavior: smooth; /* Smooth scrolling behavior */
