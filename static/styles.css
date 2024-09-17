@@ -1,4 +1,4 @@
-/* General reset */
+t/* General reset */
 *,
 *::before,
 *::after {
@@ -992,7 +992,8 @@ body {
 /* Mobile S*/
 @media (max-width: 320px) {
     .contact__container{
-        width: 100svh;
+        height: 100svh;
+        width: 100%;
     }
     .contact__right {
         display: none;
@@ -1012,7 +1013,8 @@ body {
 /* Mobile M*/
 @media (max-width: 375px) {
     .contact__container{
-        width: 100svh;
+        height: 100svh;
+        width: 100%;
     }
 
     .contact__right {
@@ -1033,7 +1035,8 @@ body {
 /* Mobile L */
 @media (max-width: 425px) {   
     .contact__container{
-        width: 100svh;
+        height: 100svh;
+        width: 100%;
     }
 
     .contact__right {
