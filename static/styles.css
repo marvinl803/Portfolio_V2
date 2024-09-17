@@ -297,6 +297,7 @@ body {
 
     .header {
         width: 100%;
+        position: fixed;
     }
 
     .list {
@@ -368,6 +369,7 @@ body {
 
     .header {
         width: 100%;
+        position: fixed;
     }
 
     .list {
@@ -439,6 +441,7 @@ body {
 
     .header {
         width: 100%;
+        position: fixed;
     }
 
     .list {
