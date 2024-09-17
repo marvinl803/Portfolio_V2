@@ -991,12 +991,9 @@ body {
 /* Contact page responsive code*/
 /* Mobile S*/
 @media (max-width: 320px) {
-    .container {
-        height: 100svh;
-    }
-    
     .contact__container{
         width: 100%;
+        height: 100svh;
     }
 
     .contact__right {
@@ -1016,12 +1013,9 @@ body {
 
 /* Mobile M*/
 @media (max-width: 375px) {
-    .container {
-        height: 100svh;
-    }
-    
     .contact__container{
         width: 100%;
+        height: 100svh;
     }
 
     .contact__right {
@@ -1040,13 +1034,10 @@ body {
 }
 
 /* Mobile L */
-@media (max-width: 425px) {
-    .container {
-        height: 100svh;
-    }
-    
+@media (max-width: 425px) {   
     .contact__container{
         width: 100%;
+        height: 100svh;
     }
 
     .contact__right {
