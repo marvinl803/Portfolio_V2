@@ -293,11 +293,10 @@ body {
   
     .navbar {
         width: 100%;
-        overflow: hidden;
     }
     .header {
         width: 100%;
-        z-index: 1000;
+        position: relative;
     }
 
     .list {
@@ -368,7 +367,7 @@ body {
     }
     .header {
         width: 100%;
-        z-index: 1000;
+        position: relative;
     }
 
     .list {
@@ -439,7 +438,7 @@ body {
     }
     .header {
         width: 100%;
-        z-index: 1000;
+        position: relative;
     }
 
     .list {
