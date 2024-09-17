@@ -438,7 +438,7 @@ body {
     }
     .header {
         width: 100%;
-        position: relative;
+        position: fixed;
     }
 
     .list {
