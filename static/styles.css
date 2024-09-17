@@ -65,6 +65,7 @@ body {
 .navbar {
     width: 100%;
     max-width: 1400px;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -296,7 +297,6 @@ body {
     }
     .header {
         width: 100%;
-        position: relative;
     }
 
     .list {
@@ -367,7 +367,6 @@ body {
     }
     .header {
         width: 100%;
-        position: relative;
     }
 
     .list {
@@ -438,7 +437,6 @@ body {
     }
     .header {
         width: 100%;
-        position: fixed;
     }
 
     .list {
