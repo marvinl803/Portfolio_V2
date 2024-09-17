@@ -369,6 +369,7 @@ body {
         width: 100%;
         position: fixed;
         background-color: hsl(262, 92%, 5%);
+        z-index: 1000; 
     }
 
     .list {
@@ -441,6 +442,7 @@ body {
         width: 100%;
         position: fixed;
         background-color: hsl(262, 92%, 5%);
+        z-index: 1000; 
     }
 
     .list {
