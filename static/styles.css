@@ -1,8 +1,12 @@
-t/* General reset */
+/* General reset */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+}
+
+@viewport {
+    viewport-fit: cover;
 }
 
 html {
@@ -249,7 +253,7 @@ body {
         max-width: 100%;
     }
     .hero__container {
-        height: 100vh;
+        height: 100svh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -318,7 +322,7 @@ body {
         max-width: 100%;
     }
     .hero__container {
-        height: 100vh;
+        height: 100svh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -387,7 +391,7 @@ body {
         max-width: 100%;
     }
     .hero__container {
-        height: 100vh;
+        height: 100svh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -504,6 +508,7 @@ body {
     .who__container {
         flex-direction: column;
         justify-content: center;
+        height: 100svh;
     }
 
     .who__left {
@@ -538,6 +543,7 @@ body {
     .who__container {
         flex-direction: column;
         justify-content: center;
+        height: 100svh;
     }
 
     .who__left {
@@ -572,6 +578,7 @@ body {
     .who__container {
         flex-direction: column;
         justify-content: center;
+        height: 100svh;
     }
 
     .who__left {
@@ -786,6 +793,7 @@ body {
     }
     .works__container {
         width: 100%;
+        height: 100svh;
     }
 
     .works__right {
@@ -835,6 +843,7 @@ body {
     }
     .works__container {
         width: 100%;
+        height: 100svh;
     }
 
     .works__right {
@@ -882,8 +891,10 @@ body {
     .container {
         max-width: 100%;
     }
+
     .works__container {
         width: 100%;
+        height: 100svh;
     }
 
     .works__right {
@@ -991,10 +1002,15 @@ body {
 /* Contact page responsive code*/
 /* Mobile S*/
 @media (max-width: 320px) {
-    .contact__container{
-        height: 100svh;
-        width: 100%;
+    .container {
+        max-width: 100%;
     }
+    
+    .contact__container{
+        width: 100%;
+        height: 100svh;
+    }
+
     .contact__right {
         display: none;
     }
@@ -1012,9 +1028,13 @@ body {
 
 /* Mobile M*/
 @media (max-width: 375px) {
+    .container {
+        max-width: 100%;
+    }
+    
     .contact__container{
-        height: 100svh;
         width: 100%;
+        height: 100svh;
     }
 
     .contact__right {
@@ -1033,10 +1053,14 @@ body {
 }
 
 /* Mobile L */
-@media (max-width: 425px) {   
+@media (max-width: 425px) {
+    .container {
+        max-width: 100%;
+    }
+    
     .contact__container{
-        height: 100svh;
         width: 100%;
+        height: 100svh;
     }
 
     .contact__right {
