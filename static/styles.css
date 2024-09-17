@@ -296,7 +296,7 @@ body {
     }
     .header {
         width: 100%;
-        height: 5.5rem;
+        position: sticky;
     }
 
     .list {
@@ -367,6 +367,7 @@ body {
     }
     .header {
         width: 100%;
+        position: sticky;
     }
 
     .list {
@@ -384,11 +385,6 @@ body {
     .navbar__button {
         width: 6.5rem;
         
-    }
-
-    .header {
-        width: 100%;
-        height: 5.5rem;
     }
 
 }
@@ -442,6 +438,7 @@ body {
     }
     .header {
         width: 100%;
+        position: sticky;
     }
 
     .list {
@@ -459,11 +456,6 @@ body {
     .navbar__button {
         width: 6.5rem;
         
-    }
-
-    .header {
-        width: 100%;
-        height: 5.5rem;
     }
 
 }
@@ -1046,11 +1038,6 @@ body {
         max-width: 100%;
         justify-content: center;
     }
-
-    .header {
-        width: 100%;
-        height: 5.5rem;
-    }
 }
 
 /* Mobile M*/
@@ -1078,11 +1065,6 @@ body {
         width: 100%;
         justify-content: center;
     }
-
-    .header {
-        width: 100%;
-        height: 5.5rem;
-    }
 }
 
 /* Mobile L */
@@ -1109,10 +1091,5 @@ body {
     .contact__form {
         width: 100%;
         justify-content: center;
-    }
-
-    .header {
-        width: 100%;
-        height: 5.5rem;
     }
 }
