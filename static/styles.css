@@ -437,6 +437,7 @@ body {
     background: #fff;
     color: #000;
   }
+  
 
 /* Contact form CSS */
 .contact__container {
@@ -715,7 +716,7 @@ body {
     .hero__left {
         align-items: center;
         justify-content: center;
-        margin-top: 50%;
+        margin-top: 10%;
     }
 
     .hero__right {
@@ -724,18 +725,18 @@ body {
 
     .hero__title {
         text-align: center;
-        font-size: 6rem;
+        font-size: 5rem !important;
         margin: 0;
     }
 
     .hero__whatwedo {
         justify-content: center;
-        font-size: 1.3rem;
+        font-size: 1.3rem !important;
     }
 
     .hero__description {
         text-align: center;
-        padding: 1rem;
+        padding: 0 !important;
     }
     .social__image {
       height: 2.8rem;
@@ -833,7 +834,7 @@ body {
     }
 
     .card .box:hover {
-        transform: none; 
+        transform: none !important; 
     }
 
     .card .box .content {
