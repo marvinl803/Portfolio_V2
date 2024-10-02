@@ -777,7 +777,7 @@ body {
     /* Who section*/
      .who__container {
         scroll-snap-align: unset;
-        height: auto !important;
+        height: auto;
         justify-content: center;
     }
 
@@ -790,12 +790,12 @@ body {
     }
 
     .whoiam__subtitle {
-        font-size: 2rem !important;
+        font-size: 2rem;
         text-align: center; 
     }
 
     .who__paragraph {
-        font-size: 1.1rem !important;
+        font-size: 1.1rem;
         text-align: left; 
         line-height: 1.5em;
     }
@@ -807,9 +807,51 @@ body {
     /* works section */
     .works__container {
         width: 100%;
+        height: auto;
         scroll-snap-align: unset !important;
         padding: 20px 10px;
         gap: 3rem;
+    }
+
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        height: 450px;
+        margin: 20px 0;
+        position: relative; 
+    }
+
+    .card .box {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        right: 5%;
+        bottom: 5%;
+        margin: 0;
+        overflow: auto; 
+    }
+
+    .card .box:hover {
+        transform: none; 
+    }
+
+    .card .box .content {
+        
+    }
+
+    .card .box .content h2 {
+        font-size: 2rem;
+        top: -5%;
+        right: 5%;
+    }
+
+    .card .box .content h3 {
+        font-size: 1.4rem;
+    }
+
+    .card .box .content p {
+        font-size: .8rem;
     }
 
     .tech__used {
@@ -822,7 +864,7 @@ body {
     }
 
     .works__list__item {
-        font-size: 2.8rem;
+        font-size: 2rem;
     }
 
     /* contact section */
