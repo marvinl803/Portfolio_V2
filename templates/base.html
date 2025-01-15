@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
 
 <body>
@@ -41,7 +41,25 @@
 <script type="module" src="{{ url_for('static', filename='js/cube.js') }}"></script>
 <script type="module" src="{{ url_for('static', filename='js/sphere.js') }}"></script>
 <script src="{{ url_for('static', filename='js/tab_functions.js') }}"></script>
-<script src="{{ url_for('static', filename='js/screenResize.js') }}"></script>
+<script>
+    particlesJS.load('particles-js', '/static/particles-config.json', function() {
+        console.log('particles.js loaded - callback');
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const snowElements = document.querySelectorAll('.snow-js');
+        snowElements.forEach((element, index) => {
+            // Assign a unique id for each snow-js element
+            element.id = `snow-js-${index}`;
+            
+            // Load particles.js for each element
+            particlesJS.load(element.id, '/static/snow-config.json', function() {
+                console.log(`particles.js loaded for ${element.id}`);
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
